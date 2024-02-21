@@ -10,10 +10,26 @@ node {
     }
     
     stage('Preparacion') {
-    echo "Conexion repositorio remot GIT HUB"
+    echo "Conexion repositorio remoto GIT HUB"
     checkout scm
     sh "pwd"
     sh "ls"
+    }
+    
+    stage('Build') {
+    echo "Compilando codigo fuente"
+    }
+    
+    stage('Execute QA') {
+    echo "Ejecucion de pruebas de calidad"
+    }
+    
+    stage('Execute Sast') {
+    echo "Ejecucion de pruebas de seguridad"
+    }
+    
+    stage('Upload Artifact') {
+    echo "Carga de artefacto en artifactory"
     }
     
     // **sh "databricks workspace import /Users/rickt89@gmail.com/test/00_Montar_Sistema_Archivos.dbc --file /var/lib/jenkins/workspace/JOB_PIPELINE_CI_CD/00_Montar_Sistema_Archivos.dbc --profile JENKINS"   
