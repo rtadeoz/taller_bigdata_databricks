@@ -245,6 +245,8 @@ df_venta.write \
       .mode("overwrite") \
       .save("/mnt/lakehousedata/bronze/venta")
 
+print("Iniciando")
+
 # COMMAND ----------
 
 # DBTITLE 1,13. Ejecución de código SQL
