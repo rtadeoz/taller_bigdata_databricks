@@ -32,5 +32,9 @@ node {
     echo "Carga de artefacto en artifactory"
     }
     
-    // **sh "databricks workspace import /Users/rickt89@gmail.com/test/00_Montar_Sistema_Archivos.dbc --file /var/lib/jenkins/workspace/JOB_PIPELINE_CI_CD/00_Montar_Sistema_Archivos.dbc --profile JENKINS"   
+    stage('Deploy in Azure Databricks') {
+    echo "Despliegue en Databricks"
+    // **sh "databricks workspace import /Users/rickt89@gmail.com/test/00_Montar_Sistema_Archivos.dbc --file /var/lib/jenkins/workspace/JOB_PIPELINE_CI_CD/00_Montar_Sistema_Archivos.dbc --profile JENKINS"       
+    }
+   
 }
