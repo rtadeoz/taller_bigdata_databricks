@@ -34,6 +34,7 @@ node {
     
     stage('Deploy in Azure Databricks') {
     echo "Despliegue en Databricks"
+    sh "databricks workspace mkdirs /prod/datamart_ventas/"
     sh "databricks workspace import /prod/datamart_ventas/01_Bronze.py --file ${workspace}/01_Bronze.py  --format SOURCE --language PYTHON --profile JENKINS"       
     }
    
