@@ -36,9 +36,9 @@ node {
     echo "Despliegue en Databricks"
     sh "databricks workspace mkdirs /prod/datamart_ventas/ --profile JENKINS"
     sh "databricks workspace import /prod/datamart_ventas/01_Bronze.py --file ${workspace}/01_Bronze.py  --format SOURCE --language PYTHON --profile JENKINS"       
-    sh "databricks workspace import /prod/datamart_ventas/02_Silver.sql --file ${workspace}/01_Bronze.py  --format SOURCE --language SQL --profile JENKINS"      
-	sh "databricks workspace import /prod/datamart_ventas/03_Gold.sql --file ${workspace}/01_Bronze.py  --format SOURCE --language SQL --profile JENKINS"      
-	sh "databricks workspace import /prod/datamart_ventas/01_Bronze.py --file ${workspace}/00_Montar_Sistema_Archivos.scala  --format SOURCE --language SCALA --profile JENKINS"      
+    sh "databricks workspace import /prod/datamart_ventas/02_Silver.sql --file ${workspace}/02_Silver.sql  --format SOURCE --language SQL --profile JENKINS"      
+	sh "databricks workspace import /prod/datamart_ventas/03_Gold.sql --file ${workspace}/03_Gold.sql  --format SOURCE --language SQL --profile JENKINS"      
+	sh "databricks workspace import /prod/datamart_ventas/00_Montar_Sistema_Archivos.scala --file ${workspace}/00_Montar_Sistema_Archivos.scala  --format SOURCE --language SCALA --profile JENKINS"      
 	}
    
 }
