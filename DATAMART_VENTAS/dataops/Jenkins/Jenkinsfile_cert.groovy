@@ -1,4 +1,4 @@
-def PRM_AMBIENTE="DESA"
+def PRM_AMBIENTE="cert"
 echo "Mi ambiente: ${PRM_AMBIENTE}"
 
 node {
