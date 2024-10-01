@@ -1,0 +1,28 @@
+{
+    "name": "ds_input_appventas_cliente_parsed",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lnk_filesystem_input_appventas_desa",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "FileServerLocation",
+                "fileName": "persona.csv"
+            },
+            "columnDelimiter": "|",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "ID|NOMBRE",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

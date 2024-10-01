@@ -1,0 +1,18 @@
+{
+    "name": "ds_input_appventas_cliente",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lnk_filesystem_input_appventas_desa",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Binary",
+        "typeProperties": {
+            "location": {
+                "type": "FileServerLocation",
+                "fileName": "persona.csv"
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "df01-esping09eu02desa"
+        },
+        "lnk_filesystem_input_appventas_desa_password": {
+            "value": ""
+        },
+        "lnk_adls_tmp_appventas_desa_accountKey": {
+            "value": ""
+        },
+        "lnk_filesystem_input_appventas_desa_properties_typeProperties_host": {
+            "value": "\\\\40.70.223.123\\Input_AppVenta\\"
+        },
+        "lnk_filesystem_input_appventas_desa_properties_typeProperties_userId": {
+            "value": "main"
+        },
+        "lnk_adls_tmp_appventas_desa_properties_typeProperties_url": {
+            "value": "https://adlslakehouseeu02desa01.dfs.core.windows.net/"
+        },
+        "containerUri": {
+            "value": ""
+        },
+        "containerSasToken": {
+            "value": ""
+        }
+    }
+}
