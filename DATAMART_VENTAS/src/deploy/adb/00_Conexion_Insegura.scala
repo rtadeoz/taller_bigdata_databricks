@@ -2,7 +2,7 @@
 // Configurar las variables de conexión
 val storageAccountName = "adlesping09eu02desa01db"
 val containerName = "lakehousedata"
-val accessKey = "qPrS8A5XSA/EU4UymbIo5B8cvBeo1r1i9z41uEpTACMYjfelG9f/ZjwglY9mloBZpClCSDaYsW0I+AStpXYP9w=="
+val accessKey = ""
 
 // COMMAND ----------
 
